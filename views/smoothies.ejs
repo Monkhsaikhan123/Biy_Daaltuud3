@@ -1,0 +1,114 @@
+<%- include('partials/header'); -%>
+<div class="cart">
+  <div class="cartarea">
+    <h4><i class="fa-solid fa-cart-shopping"></i></h4>
+    <h4>Таны Сагсанд:</h4>
+    <h4 id="number">0</h4> 
+    <h4 id="">Бараа байна</h4> 
+  </div>
+  <div class="icon">
+    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+    <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+    <a href=""><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+  </div>
+</div>
+<ul class="recipes">
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/252648_252531_252529_252528_252527_252525_252522_252521_252520_252519_252518_252516_new_b55dcc64920ac8ef39bcba07cfd95cf6f7ab1e36.png" alt="smoothie recipe icon">
+    <h4>Vanilla choco heart cake</h4>
+    <p id="p1">Шоколадан кекс, шоколадан мүүстэй, гүзээлзгэнэ цагаан шоколад болон нэрс жимстэй цагаан кекс ванильтай мүүс бялуу<hr>
+        Хэмжээ-15см<hr>
+        Үнэ:55000</p>
+    <div class="action">
+          <button onclick="check()">Сагсанд хийх</button>
+          <button onclick="check1()">Дэлгэрэнгүй</button>
+    </div> 
+  </li>
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/252649_252513_252512_252511_252510_252509_252508_252507_252506_252505_252503_252502_252501_252500_252499_252498_new_8bb608fa6c1819e19bbb6cd5ad0336722589506d.png" alt="smoothie recipe icon">
+    <h4>Fresh pearl cake</h4>
+    <p id="p2">Цэвэр сүүн кремтэй хөвсгөр зөөлөн цагаан кекстэй жимсний коктейл хавчуургатай гүзээлзгэнэ нэрсээр чимэглэсэн амтат бялуу<hr>
+        Хэмжээ-21см<hr>
+        Үнэ:45000</p>
+    <div class="action">
+          <button onclick="check()">Сагсанд хийх</button>
+          <button onclick="check2()">Дэлгэрэнгүй</button>
+    </div>    
+  </li>
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/new_d00bd7793647cde28c519b3eb856a66e58e921d4.png" alt="smoothie recipe icon">
+    <h4>Fresh strawberry mix cake</h4>
+    <p id="p3">Цэвэр сүүн кремтэй хөвсгөр зөөлөн цагаан кекстэй жимсний коктейлийн хавчуургатай жүрж, гүзээлзгэнэ болон усан үзмээр чимэглэсэн бялуу<hr>
+        Хэмжээ-24см<hr>
+        Үнэ:68000</p>
+    <div class="action">
+          <button onclick="check()">Сагсанд хийх</button>
+          <button onclick="check3()">Дэлгэрэнгүй</button>
+    </div> 
+  </li>
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/new_d00bd7793647cde28c519b3eb856a66e58e921d4.png" alt="smoothie recipe icon">
+    <h4>Blueberry fresh cream cake</h4>
+    <p id="p4">Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу<hr>
+        Хэмжээ-18см<hr>
+        Үнэ:67000</p>
+    <div class="action">
+          <button onclick="check()">Сагсанд хийх</button>
+          <button onclick="check4()">Дэлгэрэнгүй</button>
+    </div>     
+  </li>
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/252650_252494_252493_252492_252491_252490_252489_252488_252487_252486_252485_252484_252482_252481_new_72f0332a0051de79fab335c7d5be1f510a20d9b5.png" alt="smoothie recipe icon">
+    <h4>Rose mix berry cream cake</h4>
+    <p id="p5">Дотроо тусгайлан бэлтгэсэн зөгийн бал, гүзээлзгэний чанамалыг хавчуулсан сүүн кремтэй бялуу<hr>
+        Хэмжээ-18см<hr>
+        Үнэ:70000</p>
+    <div class="action">
+          <button onclick="check()">Сагсанд хийх</button>
+          <button onclick="check5()">Дэлгэрэнгүй</button>
+    </div>     
+  </li>
+  <li class="recipe">
+    <img src="https://cdn.greensoft.mn/uploads/site/1200/product/new_6ab05a90625418794ebbd364b4892bf382f1dac9.png">
+    <h4>Fresh flow cake</h4>
+    <p id="p6">Цэвэр сүүн кремтэй хөвсгөр зөөлөн цагаан кекстэй, жисмний коктейлийн хавчуургатай амтат бялуу<hr>
+        Хэмжээ-18см<hr>
+        Үнэ:35000</p>
+    <div class="action">
+        <button onclick="check()">Сагсанд хийх</button>
+        <button onclick="check6()">Дэлгэрэнгүй</button>
+    </div> 
+   
+  </li>
+</ul>
+
+<script>
+  x = 0;
+
+  number.innerHTML = 0;
+  check = function(){
+    alert("Бараа сагсанд нэмэгдлээ") + number.innerHTML++
+  };
+
+  check1 = function(){  
+    alert(p1.innerHTML)
+  }
+  check2 = function(){  
+    alert(p2.innerHTML)
+  }
+  check3 = function(){  
+    alert(p3.innerHTML)
+  }
+  check4 = function(){  
+    alert(p4.innerHTML)
+  }
+  check5 = function(){  
+    alert(p5.innerHTML)
+  }
+  check6 = function(){  
+    alert(p6.innerHTML)
+  }
+
+</script>
+
+<%- include('partials/footer'); -%>
